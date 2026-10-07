@@ -1,0 +1,17 @@
+:root{--bg:#070a14;--card:rgba(255,255,255,.045);--line:rgba(255,255,255,.09);--text:#eef2ff;--t2:#a5adc8;--accent:#1de9b6;--accent2:#3b82f6}
+*{box-sizing:border-box;margin:0}
+body{font-family:Inter,ui-sans-serif,system-ui,sans-serif;background:radial-gradient(1200px 600px at 10% -10%,#0f3d36 0,transparent 60%),radial-gradient(900px 500px at 110% 110%,#132a5c 0,transparent 55%),var(--bg);color:var(--text);line-height:1.65;min-height:100vh}
+main{max-width:760px;margin:0 auto;padding:64px 16px 80px}
+.logo{display:flex;align-items:center;gap:12px;margin-bottom:40px}
+.logo i{width:42px;height:42px;border-radius:50%;background:conic-gradient(from 200deg,var(--accent),var(--accent2),var(--accent));box-shadow:0 0 40px -6px var(--accent)}
+.logo b{letter-spacing:.3em;font-size:15px}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.15;letter-spacing:-.02em;margin-bottom:16px}
+h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:19px;margin:34px 0 10px}
+p,li{color:var(--t2)}
+ul{padding-left:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:30px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.card b{display:block;color:var(--text);margin-bottom:4px}
+a{color:var(--accent)}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--t2);display:flex;gap:18px;flex-wrap:wrap}
